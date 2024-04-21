@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #198754;
+}
+
+.calculator {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.selections {
+    flex-basis: calc(50% - 10px); /* 50% width with spacing */
+}
+
+.quantities {
+    flex-basis: calc(50% - 10px); /* 50% width with spacing */
+    margin-top: 20px; /* Spacing between quantities and button */
+}
+
+.actions {
+    flex-basis: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Spacing between button and result */
+}
+
+.label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.checkboxes {
+    margin-bottom: 15px;
+}
+
+.checkbox {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #198754;
+    border-radius: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked {
+    background-color: #198754;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #198754;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0d6e3f;
+}
+
+.result-container {
+    flex-basis: 100%; /* Full width */
+}
+
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #198754;
+    text-align: center; /* Center the result */
+}
